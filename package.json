@@ -1,0 +1,28 @@
+{
+  "name": "pablodotjs-schematic",
+  "version": "1.0.0",
+  "description": "A blank schematics",
+  "scripts": {
+    "build": "yarn clean && tsc -p tsconfig.json",
+    "clean": "rm -rf src/pablodotjs-schematic/*.js src/pablodotjs-schematic/*.js.map src/pablodotjs-schematic/*.d.ts",
+    "watch": "tsc -p tsconfig.json --watch",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^15.2.2",
+    "@angular-devkit/schematics": "^15.2.2",
+    "@schematics/angular": "^15.2.2",
+    "typescript": "~4.9.3"
+  },
+  "devDependencies": {
+    "@types/jasmine": "~4.3.0",
+    "@types/node": "^14.15.0",
+    "jasmine": "^4.0.0"
+  }
+}

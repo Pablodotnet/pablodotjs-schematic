@@ -1,0 +1,11 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "extends": ["@schematics/angular"],
+  "schematics": {
+    "pablodotjs-schematic": {
+      "description": "A blank schematic.",
+      "factory": "./pablodotjs-schematic/index#pablodotjsSchematic",
+      "schema": "./pablodotjs-schematic/schema.json"
+    }
+  }
+}
